@@ -9,8 +9,8 @@
 <body>
 
 
-    <div class="main-container">
-        <div  class="content">
+    <div id="mainContainer">
+        <div  id="content">
             <header class="header">
                 <h2 id="gameTitle">GUESSING GAME</h2>
             </header>
@@ -20,11 +20,13 @@
             </header>
 
             <div id="gameContent">
-            <input id="userInput" type="text" name="number" />
-
+                <form>
+                    <input id="userInput" type="text" name="number" />
+                </form>
+           
             <button onclick = "backToHome()" id="backHome">Back</button>
             <button id="submitUserInput">SUBMIT</button>
-            <button  onclick = "restart()" id="tryAgain">TRY AGAIN</button>
+            <button  onclick = "window.location.reload()" id="tryAgain">TRY AGAIN</button>
 
             <headee>
                 <div id="showCase"></div>
@@ -47,7 +49,7 @@
             </div>
 
             <button onclick = "hintClose()" id="closeHint">CLOSE HINT</button>
-           
+            
         </div>  
         
         
