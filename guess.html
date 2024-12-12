@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initiscale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="../week-five-assignment-joseph20t/css/index.css">
+</head>
+<body>
+
+
+    <div id="mainContainer">
+        <div  id="content">
+            <header class="header">
+                <h2 id="gameTitle">GUESSING GAME</h2>
+            </header>
+    
+            <header>
+                <h3 id="rangeOfNum">PLEASE GUESS A NUMBER FROM 1 TO 100</h3>
+            </header>
+
+            <div id="gameContent">
+                <form>
+                    <input id="userInput" type="text" name="number" />
+                </form>
+           
+            <button onclick = "backToHome()" id="backHome">Back</button>
+            <button id="submitUserInput">SUBMIT</button>
+            <button  onclick = "window.location.reload()" id="tryAgain">TRY AGAIN</button>
+
+            <headee>
+                <div id="showCase"></div>
+            </header>
+        </div>
+
+        <section id="displayContent">
+            <button onclick = "display()" id="start">START</button>
+            <button onclick = "displayGameInformation()" id="instruction">INSTRUCTION</button>
+        </section>
+           
+
+            
+
+            <div id="instructionMenu">
+                <li id="gameInformation">Please enter a number from 1 to 100</li>
+                <li id="gameInformation">Please enter a number from 1 to 100</li>
+                <li id="gameInformation">Please enter a number from 1 to 100</li>
+                <li id="gameInformation">Please enter a number from 1 to 100</li>
+            </div>
+
+            <button onclick = "hintClose()" id="closeHint">CLOSE HINT</button>
+            
+        </div>  
+        
+        
+        
+    </div>
+
+    <script src="../week-five-assignment-joseph20t/js/script.js"></script>
+</body>
+</html>
